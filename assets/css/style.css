@@ -15,7 +15,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #DEF2F1;
+    background-color:#fbf9fa;
     min-height: 10vh;
     font-size: 20px;
     color: #000000;
@@ -24,7 +24,7 @@ nav {
 }
 
 .links {
-    color: #000000;
+    color: #2b2024;
     font-size: 14px;
     letter-spacing: 2px;
     display: flex;
@@ -34,7 +34,7 @@ nav {
 }
 
 .links a {
-    color: #000000;
+    color:#fd0054;
 }
 
 .links a:hover {
@@ -73,12 +73,12 @@ section {
     line-height: 25px;
     Margin: 5px;
     padding: 10px;
-    background-color: #DEF2F1;
+    background-color: #fbf9fa;
 }
 
 section h2 {
     font-size: 18px;
-    color: #3AAFA9;
+    color:#a80038;
     font-weight: 600;
 }
 
@@ -107,7 +107,7 @@ hr {
 }
 
 .contact {
-    color: #DEF2F1;
+    color:#fbf9fa;
     font-size: 14px;
     display: flex;
     width: 100%;
@@ -206,7 +206,7 @@ footer {
 .container .card .cardcont h2 {
     font-size: 20px;
     padding-bottom: 15px;
-    color: #a80038;
+    color: #fd0054;
 }
 
 /* -----Media Queries---- */
@@ -230,7 +230,7 @@ footer {
         height: 100vh;
         width: 100%;
         top: 10vh;
-        background-color: #2B7A78;
+        background-color: #fbf9fa;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
