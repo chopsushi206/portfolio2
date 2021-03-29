@@ -14,6 +14,7 @@ const navSlide = () => {
             link.addEventListener('click', () => {
               nav.classList.toggle('icon-active');
               icon.classList.toggle('transform');
+              link.style.animation = '';
           })
         });
         icon.classList.toggle('transform');
