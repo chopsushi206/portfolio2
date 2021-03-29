@@ -38,8 +38,8 @@ nav {
 }
 
 .links a:hover {
+    color: #a80038;
     font-weight: 600;
-    text-decoration: underline;
 }
 
 .icon {
@@ -122,8 +122,7 @@ hr {
 }
 
 .contact a:hover {
-    color: #DEF2F1;
-    background-color: #2B7A78;
+    color: #fd0054;
     transition: ease 0.3s;
 }
 
@@ -191,7 +190,7 @@ footer {
     padding: 10px 15px;
     text-align: center;
     line-height: 15px;
-    font-size: 10px;
+    font-size: 12px;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
@@ -200,13 +199,27 @@ footer {
 .container .card:hover .cardcont {
     visibility: visible;
     opacity: 1;
-    margin-top: -20px;
+    margin-top: -40px;
+}
+
+.container .card .cardcont p {
+    padding-bottom: 5px;
 }
 
 .container .card .cardcont h2 {
     font-size: 20px;
     padding-bottom: 15px;
+    color: #a80038;
+}
+
+.container .card a {
+    color: #17252A;
+    padding: 5px;
+}
+
+.container .card a:hover {
     color: #fd0054;
+    transition: ease 0.3s;
 }
 
 /* -----Media Queries---- */
@@ -228,7 +241,7 @@ footer {
         position: absolute;
         right: 0px;
         height: 100vh;
-        width: 100%;
+        width: 30%;
         top: 10vh;
         background-color: #fbf9fa;
         display: flex;
@@ -271,6 +284,8 @@ footer {
     }
 }
 
+/* ----keyframes---- */
+
 @keyframes linkTransition {
     from {
         opacity: 0;
@@ -281,6 +296,8 @@ footer {
         transform: translateX(0px);
     }
 }
+
+/* ----Icon Transformation Animation Classes---- */
 
 .transform .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
