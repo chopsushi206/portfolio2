@@ -66,6 +66,7 @@ span {
 /* ----Content Styles---- */
 
 .content {
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,19 +95,34 @@ section {
 
 .aboutbox {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction:column;
+    flex-wrap: wrap;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .devphoto {
     border: 1px solid #292929;
     border-radius: 4px;
+    margin-top: 5px;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.resumeCont {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.resumeCont a {
+    color: #e3e3e3;
     padding: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    max-width: 150px;
-    max-height: 150px;
+}
+
+.resumeCont a:hover {
+    color: #fd0054;
+    transition: ease 0.3s;
 }
 
 .contact {
@@ -214,6 +230,12 @@ footer {
 /* -----Media Queries---- */
 
 @media screen and (max-width: 650px) {
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        width: 90%;
+    }
     .links {
         position: absolute;
         right: 0px;
@@ -228,17 +250,10 @@ footer {
         justify-content: space-evenly;
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
-        z-index: 2;
+        z-index: 1;
     }
     .links li {
         opacity: 0;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    .devphoto {
-        width: 25%;
-        height: 25%;
     }
     .icon {
         display: block;
