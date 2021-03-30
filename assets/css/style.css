@@ -89,13 +89,7 @@ section {
     color:#a80038;
     font-weight: 600;
     text-align:center;
-}
-
-hr {
-    background-color: #FEFFFF;
-    border-color: #FEFFFF;
-    width: 95%;
-    margin-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .aboutbox {
@@ -255,6 +249,18 @@ footer {
     }
     .row {
         justify-content: space-around;
+    }
+    .container {
+        padding: 15px;
+    }
+    .container .card {
+        margin: 10px 10px 50px 0px;
+    }
+    .container .card .cardimg {
+        top: -50px;
+    }
+    #projects {
+        padding-bottom: 50px;
     }
 }
 

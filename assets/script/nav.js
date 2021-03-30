@@ -5,7 +5,7 @@ const navSlide = () => {
 
     icon.addEventListener('click', () => {
         nav.classList.toggle('icon-active');
-        icon.classList.add('transform');
+        icon.classList.toggle('transform');
         links.forEach((link, index) => {
             link.style.animation = `linkTransition 1.5s ease forwards ${index / 10}s`;
         })
@@ -13,13 +13,13 @@ const navSlide = () => {
     links.forEach((link) => {
         link.addEventListener('click', () => {
           nav.classList.toggle('icon-active');
-          icon.classList.remove('transform');
+          icon.classList.toggle('transform');
           links.forEach((link) =>{
             link.style.animation = '';
           })
       })
     });
 
-}
+};
 
 navSlide();
