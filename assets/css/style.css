@@ -82,7 +82,6 @@ section {
     background-color:#1e1e1e;
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0,0,0,.5);
-    position: relative;
 }
 
 .title {
@@ -97,8 +96,6 @@ section {
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
 }
 
 .devphoto {
@@ -113,6 +110,7 @@ section {
     width:100%;
     display: flex;
     justify-content: center;
+    z-index: 0;
 }
 
 .resumeCont a {
